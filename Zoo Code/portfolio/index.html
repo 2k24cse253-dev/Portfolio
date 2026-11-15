@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varshinie A. R. | Brand Stylist & Fashion Stylist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-letter">V</span><span class="logo-text">arshinie</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Brand Stylist | Brand Strategist | Fashion Stylist
+            </div>
+            <h1 class="hero-title">
+                <span class="name">Varshinie A. R.</span>
+                <span class="title">Shaping Brand Perception Through Fashion & Visual Storytelling</span>
+            </h1>
+            <p class="hero-subtitle">
+                M.Des candidate at NIFT Kangra combining fashion styling, visual storytelling and user-centred research to shape brand perception.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Salem, Tamil Nadu, India <span class="relocation">(Open to Relocation)</span></span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="profile-card-3d">
+                <div class="card-face card-front">
+                    <img src="../WhatsApp Image 2026-11-15 at 6.03.54 PM.jpeg" alt="Varshinie A. R." class="profile-img">
+                    <div class="card-glow"></div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="back-content">
+                        <h3>Brand & Fashion Stylist</h3>
+                        <p>M.Des Candidate at NIFT Kangra</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/varshinie-anitha-raja-7528b8390" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://behance.net/varshiniear2" target="_blank"><i class="fab fa-behance"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mailto:varshinie.anitha@nift.ac.in"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>M.Des Candidate | Brand Stylist & Fashion Stylist</h3>
+                    <p class="summary">
+                        M.Des candidate at NIFT Kangra combining fashion styling, visual storytelling and user-centred research to shape brand perception.
+                        Experienced in styling, garment development, fashion illustration and digital prototyping.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="detail-label">Education</span>
+                                <span class="detail-value">M.Des, NIFT Kangra (2025-2027)</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Salem, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="detail-label">Phone</span>
+                                <span class="detail-value">+91 9342510028</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value">varshinie.anitha@nift.ac.in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-resume">
+                    <div class="resume-card">
+                        <h3>Download Resume</h3>
+                        <p>Get my complete professional resume with detailed experience and achievements.</p>
+                        <a href="../Resume.pdf" download class="btn btn-outline">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Production Merchandising Intern</h3>
+                        <span class="company">Uni Fab Crafts, Bengaluru</span>
+                        <span class="period">June 2026 – July 2026</span>
+                        <p>Gained hands-on exposure to production merchandising during a two-month internship.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Textile & Garment Intern</h3>
+                        <span class="company">Everyouth Apparel, Coimbatore</span>
+                        <span class="period">December 2022 – January 2023</span>
+                        <p>Assisted in garment construction and sampling. Gained hands-on exposure to dyeing, weaving and knitting processes. Supported fabric handling and quality checks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Textile & Garment Intern</h3>
+                        <span class="company">Hanuman Knit Fashions, Coimbatore</span>
+                        <span class="period">December 2023 – January 2024</span>
+                        <p>Assisted in garment construction and sampling. Gained hands-on exposure to dyeing, weaving and knitting processes. Supported fabric handling and quality checks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Selected Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-3d-hover">
+                            <div class="project-overlay">
+                                <span class="project-type">Concept | Branding | Figma</span>
+                                <h3>QUOIN – Temporary Space Rental</h3>
+                                <p>Temporary-space rental concept for businesses and individuals</p>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Branding & UX</span>
+                        <h3>QUOIN – Temporary Space Rental Concept</h3>
+                        <div class="project-description">
+                            Developed a temporary-space rental concept for businesses and individuals, including branding and visual identity. Prototyped the space-owner and renter booking journeys in Figma. Explored brand touchpoints such as Space Passport, Space Match, a brochure and digital communication.
+                        </div>
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Figma</span>
+                            <span>UX Design</span>
+                            <span>Visual Identity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-3d-hover">
+                            <div class="project-overlay">
+                                <span class="project-type">Styling | Photoshoots | Reels</span>
+                                <h3>Fashion Styling & Photoshoots</h3>
+                                <p>Editorial styling and fashion content creation</p>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Fashion Styling</span>
+                        <h3>Fashion Styling and Photoshoots</h3>
+                        <div class="project-description">
+                            Styled bridal, traditional and cultural, Indo-Western, streetwear and contemporary looks. Developed editorial styling and photoshoot concepts. Created fashion and styling reels for a public Instagram page; three reached thousands of views.
+                        </div>
+                        <div class="project-tags">
+                            <span>Styling</span>
+                            <span>Photoshoots</span>
+                            <span>Reels</span>
+                            <span>Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-3d-hover">
+                            <div class="project-overlay">
+                                <span class="project-type">M.Des | Ongoing</span>
+                                <h3>Graduation Project</h3>
+                                <p>Styling-Led Digital Presentation Framework</p>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Research & Design</span>
+                        <h3>Graduation Project (Proposed)</h3>
+                        <div class="project-description">
+                            Working title: Beyond the Product Photograph: Communicating Garment Fit, Drape and Movement in Online Fashion Retail. Research question: How can styling-led digital content help shoppers understand fit, drape and movement beyond standard product photographs? Seeking a four-month internship placement.
+                        </div>
+                        <div class="project-tags">
+                            <span>M.Des</span>
+                            <span>Research</span>
+                            <span>Digital Fashion</span>
+                            <span>Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-3d-hover">
+                            <div class="project-overlay">
+                                <span class="project-type">Research | Illustration | Collection</span>
+                                <h3>Thanjavur Collection</h3>
+                                <p>Cultural fashion collection</p>
+                                <div class="project-links">
+                                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Collection Design</span>
+                        <h3>Thanjavur-Inspired Fashion Collection</h3>
+                        <div class="project-description">
+                            Researched Thanjavur cultural references and translated them into fashion concepts. Produced fashion illustrations and developed garments for the collection. Presented the final collection.
+                        </div>
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>Illustration</span>
+                            <span>Collection</span>
+                            <span>Cultural Fashion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-bullhorn"></i> Brand & Visual Communication</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Brand Storytelling</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Visual Direction</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Fashion Styling</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Campaign & Editorial Styling</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Content Creation</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-pencil-ruler"></i> Fashion & Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Fashion Illustration</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Hand Sketches</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Digital Flats</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Garment Development</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Photoshoot Concepts</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Digital Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Canva</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Inkscape</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TUKAcad</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TUKAdesign</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Video Editing (Intermediate)</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Research & Strategy</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Design Thinking</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>User-Centred Research</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Visual Research</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Concept Development</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Creative Problem-Solving</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-badge">2nd Prize</div>
+                    <h3>Evanza Fashion Show</h3>
+                    <span class="achievement-institution">PSGR Krishnammal College, 2025</span>
+                    <p>Participated in intercollegiate fashion shows as a designer and model.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-badge">₹7,000</div>
+                    <h3>Independent Earnings</h3>
+                    <span class="achievement-institution">Fashion Design Work & Show Participation</span>
+                    <p>Earned through independent fashion design work and show participation.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-badge">M.Des</div>
+                    <h3>NIFT Kangra</h3>
+                    <span class="achievement-institution">National Institute of Fashion Technology</span>
+                    <p>Master of Design candidate (2025 – 2027)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Beautiful</h3>
+                    <p>Available for fashion styling, brand strategy, and design collaborations.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">varshinie.anitha@nift.ac.in</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 9342510028</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Salem, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/varshinie-anitha-raja-7528b8390" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://behance.net/varshiniear2" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:varshinie.anitha@nift.ac.in"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-letter">V</span><span class="logo-text">arshinie</span>
+                </div>
+                <p class="footer-text">&copy; 2026 Varshinie A. R. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/varshinie-anitha-raja-7528b8390" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://behance.net/varshiniear2" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/three-bg.js"></script>
+</body>
+</html>
