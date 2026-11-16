@@ -244,6 +244,49 @@ export default async function ProjectDetailPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Gallery */}
+      {project.gallery && project.gallery.length > 0 && (
+        <section className="relative overflow-hidden border-t border-white/10">
+          <div className="grid-lines pointer-events-none absolute inset-0" />
+          <div className="container-page relative z-10 py-14 sm:py-20">
+            <Reveal>
+              <p className="text-[11px] font-semibold tracking-[0.24em] text-rose uppercase">
+                Gallery
+              </p>
+              <h2 className="display mt-3 text-[clamp(1.6rem,4vw,2.5rem)] text-cream">
+                Selected pages &amp; frames
+              </h2>
+            </Reveal>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {project.gallery.map((img, i) => (
+                <Reveal
+                  key={img.src}
+                  delay={(i % 3) * 70}
+                  className={img.span === "wide" ? "sm:col-span-2" : undefined}
+                >
+                  <figure className="group relative overflow-hidden rounded-2xl border border-white/10 bg-ink-3">
+                    <Image
+                      src={img.src}
+                      alt={img.caption ?? `${project.title} — image ${i + 1}`}
+                      width={834}
+                      height={1180}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="h-auto w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+                    />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+                    {img.caption && (
+                      <figcaption className="absolute inset-x-0 bottom-0 translate-y-2 p-4 text-[12px] font-medium tracking-wide text-cream opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                        {img.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Next project */}
       {next && (
         <section className="relative overflow-hidden border-t border-white/10 mesh-bg">

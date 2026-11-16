@@ -13,7 +13,8 @@ export const metadata = {
 };
 
 export default function WorkPage() {
-  const withMedia = projects.filter((p) => p.image || p.prototypeUrl);
+  const featured = projects.filter((p) => p.featured && (p.image || p.prototypeUrl));
+  const rest = projects.filter((p) => !featured.includes(p));
 
   return (
     <main className="min-h-screen">
@@ -69,7 +70,7 @@ export default function WorkPage() {
           quality={70}
         />
         <div className="container-page relative z-10 py-14 sm:py-20">
-          {withMedia.map((p) => (
+          {featured.map((p) => (
             <Reveal key={`feature-${p.id}`} className="mb-12">
               <div
                 id={`${p.id}-feature`}
@@ -140,7 +141,7 @@ export default function WorkPage() {
           ))}
 
           <div className="grid gap-5 md:grid-cols-2">
-            {projects.map((p, i) => (
+            {rest.map((p, i) => (
               <div key={p.id} id={p.id} className="h-full scroll-mt-28">
                 <ProjectCard project={p} index={i} />
               </div>
