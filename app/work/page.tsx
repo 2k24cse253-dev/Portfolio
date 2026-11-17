@@ -94,7 +94,7 @@ export default function WorkPage() {
                   </div>
                   <div className="flex flex-col justify-center p-7 sm:p-10">
                     <p className="text-[11px] font-semibold tracking-[0.2em] text-rose uppercase">
-                      Featured · {p.year}
+                      {p.upcoming ? "Upcoming" : "Featured"} · {p.year}
                     </p>
                     <h2 className="display mt-3 text-3xl text-cream sm:text-4xl">
                       {p.title}

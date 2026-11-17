@@ -43,7 +43,13 @@ export default function ProjectCard({
         <div className="flex flex-1 flex-col p-6 sm:p-7">
           <div className="flex items-start justify-between gap-4">
             <span className="text-[11px] font-semibold tracking-[0.2em] text-muted uppercase">
-              {project.year}
+              {project.upcoming ? (
+                <span className="rounded-full border border-amber/40 bg-amber/10 px-2 py-0.5 text-amber">
+                  Upcoming · {project.year}
+                </span>
+              ) : (
+                project.year
+              )}
             </span>
             <span className="text-lg text-rose transition duration-300 group-hover:translate-x-1.5 group-hover:text-rose-soft">
               →

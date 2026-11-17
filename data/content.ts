@@ -94,6 +94,7 @@ export type Project = {
   sections?: ProjectSection[];
   gallery?: GalleryImage[];
   nextId?: string;
+  upcoming?: boolean;
 };
 
 export const projects: Project[] = [
@@ -213,6 +214,7 @@ export const projects: Project[] = [
     ],
     image: "/projects/research-ucd.jpg",
     featured: true,
+    upcoming: true,
     role: "Researcher · Design lead (M.Des)",
     tools: ["User-centred research", "Design thinking", "Figma", "Visual research"],
     duration: "M.Des thesis · ongoing",
@@ -287,9 +289,6 @@ export const projects: Project[] = [
       { src: "/projects/thanjavur-history.jpg", caption: "Cultural research" },
       { src: "/projects/thanjavur-queens.jpg", caption: "Motif & figure references" },
       { src: "/projects/thanjavur-sketches.jpg", caption: "Design sketches" },
-      { src: "/projects/thanjavur-garment.jpg", caption: "Garment development" },
-      { src: "/projects/thanjavur-show.jpg", caption: "Final showing" },
-      { src: "/projects/thanjavur-final.jpg", caption: "Collection presentation" },
       { src: "/projects/thanjavur-repeat.jpg", caption: "Surface & repeat studies" },
     ],
     nextId: "kidswear",
@@ -380,6 +379,9 @@ export const projects: Project[] = [
       { src: "/projects/glow-inspo.jpg", caption: "Inspiration board" },
       { src: "/projects/glow-mood.jpg", caption: "Mood board" },
       { src: "/projects/glow-theme.jpg", caption: "Theme & palette" },
+      { src: "/projects/thanjavur-final.jpg", caption: "Garment — Step Back in Time" },
+      { src: "/projects/thanjavur-garment.jpg", caption: "Final garment" },
+      { src: "/projects/thanjavur-show.jpg", caption: "Runway showing" },
     ],
     nextId: "editorial",
   },

@@ -64,8 +64,13 @@ export default async function ProjectDetailPage({ params }: Props) {
             </Link>
             <p className="mt-8 flex flex-wrap items-center gap-3 text-[11px] font-semibold tracking-[0.24em] text-rose uppercase">
               <span className="h-px w-10 bg-rose/60" />
-              Case study · {project.year}
+              {project.upcoming ? "Upcoming project" : "Case study"} · {project.year}
             </p>
+            {project.upcoming && (
+              <span className="mt-4 inline-block rounded-full border border-amber/40 bg-amber/10 px-4 py-1.5 text-[11px] font-semibold tracking-[0.16em] text-amber uppercase">
+                Coming soon
+              </span>
+            )}
             <h1 className="display mt-3 max-w-4xl text-[clamp(2.4rem,7vw,5rem)] leading-[0.95] text-cream">
               {project.title}
             </h1>
